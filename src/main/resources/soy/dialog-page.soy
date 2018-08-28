@@ -15,6 +15,20 @@
             {param name: $name /}
             {param key: $key /}
         {/call}
+        <fieldset>
+            <div class="field-group">
+                <label for="space-description">{getText('confluence.blueprints.space.example.dialog.label.description')}</label>
+                <textarea id="space-description" class="textarea long-field" rows="3" type="text" name="description"
+                    placeholder="{getText('confluence.blueprints.space.example.dialog.label.description.placeholder')}"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="field-group">
+                <label for="space-homepage-heading">{getText('confluence.blueprints.space.example.dialog.label.heading')}</label>
+                <textarea id="space-homepage-heading" class="textarea long-field" rows="3" type="text" name="spaceHomepageHeading"
+                    placeholder="{getText('confluence.blueprints.space.example.dialog.label.heading.placeholder')}"></textarea>
+            </div>
+        </fieldset>
         <input type="hidden" name="atl_token" value="{$atlToken}" />
     </form>
     {/template}

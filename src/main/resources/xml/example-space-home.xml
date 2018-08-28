@@ -1,7 +1,8 @@
 <ac:layout>
     <ac:layout-section ac:type="single">
         <ac:layout-cell>
-            <h2><at:i18n at:key="confluence.blueprints.space.example.home.children.heading" /></h2>
+            <!-- <h2><at:i18n at:key="confluence.blueprints.space.example.home.children.heading" /></h2> -->
+            <h2><at:var at:name="spaceHomepageHeading"/></h2>
             <p>
                 <ac:macro ac:name="children">
                     <ac:parameter ac:name="page"></ac:parameter>
